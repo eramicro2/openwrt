@@ -14,11 +14,11 @@ IP 192.168.1.1, 密码 password
 
 4. ```bash
 
-   下载 feeds 源中的软件包源码
+   下载feeds源中的软件包源码
    
     ./scripts/feeds update -a
    
-   安装 feeds 中的软件包
+   安装feeds中的软件包
    
     ./scripts/feeds install -a
    
@@ -43,8 +43,6 @@ IP 192.168.1.1, 密码 password
     -j1 后面是线程数。第一次编译推荐用单线程。
 
 
-
-=
 
 二次编译：
 ```bash
