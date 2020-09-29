@@ -1,9 +1,11 @@
 -
-注意：
+20200929 Update feeds
+         src-git openwrt-packages https://github.com/eramicro/openwrt-packages.git
+         src-git small https://github.com/eramicro/small.git
+         src-git helloworld https://github.com/eramicro/helloworld.git
 -
 1. **不**要用 **root** 用户 git 和编译！！！
-2. 国内用户编译前最好准备好梯子
-3. 默认登陆IP 192.168.1.1, 密码 password
+2. 默认登陆IP 192.168.1.1, 密码 password
 
 编译命令如下:
 -
