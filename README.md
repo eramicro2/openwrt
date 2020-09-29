@@ -67,6 +67,7 @@ make -j$(($(nproc) + 1)) V=s
 ```
 
 文件清理
+-
 ```
 make clean
 
