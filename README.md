@@ -2,6 +2,9 @@ IP 192.168.1.1, 密码 password
 
 编译命令如下:
 -
+
+首次编译：
+-
 1.  Ubuntu  18 LTS x64
 
 2. 环境准备
@@ -44,7 +47,10 @@ IP 192.168.1.1, 密码 password
 
 
 
+
 二次编译：
+-
+
 ```bash
 cd lede
 git pull
