@@ -16,23 +16,23 @@ IP 192.168.1.1, 密码 password
 
    下载 feeds 源中的软件包源码
    
-   `./scripts/feeds update -a`
+    ./scripts/feeds update -a
    
    安装 feeds 中的软件包
    
-   `./scripts/feeds install -a`
+    ./scripts/feeds install -a
    
    调整 OpenWrt 系统组件
    
-   `make menuconfig`
+    make menuconfig
 
 5. 预下载编译所需的软件包
 
-  `make -j8 download V=s`
+   make -j8 download V=s
    
 6.检查文件完整性
 
-  `find dl -size -1024c -exec ls -l {} \;`
+   find dl -size -1024c -exec ls -l {} \;
    
    此命令可以列出下载不完整的文件，如果存在这样的文件可以使用find dl -size -1024c -exec rm -f {} \;命令将它们删除，然后重新执行make download下载并反复检查，确认所有文件完整可大大提高编译成功率。
    
