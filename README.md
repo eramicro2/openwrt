@@ -52,7 +52,6 @@ IP 192.168.1.1, 密码 password
 cd lede
 git pull
 ./scripts/feeds update -a && ./scripts/feeds install -a
-make menuconfig
 make defconfig
 make -j8 download
 find dl -size -1024c -exec ls -l {} \;
