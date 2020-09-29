@@ -28,10 +28,19 @@ sudo apt-get -y install build-essential asciidoc binutils bzip2 gawk gettext git
 
 5. 预下载编译所需的软件包
 
-  `make -j8 download V=s` 下载dl库
+  `make -j8 download V=s
+   ```
+   
+6.检查文件完整性
 
+  `find dl -size -1024c -exec ls -l {} \;
+   ```
+   
+   此命令可以列出下载不完整的文件，如果存在这样的文件可以使用find dl -size -1024c -exec rm -f {} \;命令将它们删除，然后重新执行make download下载并反复检查，确认所有文件完整可大大提高编译成功率。
+   
+7. 开始编译
 
-6. 输入 `make -j1 V=s` （-j1 后面是线程数。第一次编译推荐用单线程）即可开始编译你要的固件了。
+ `make -j1 V=s` （-j1 后面是线程数。第一次编译推荐用单线程）即可开始编译你要的固件了。
 
 
 
